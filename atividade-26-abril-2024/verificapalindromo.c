@@ -1,22 +1,22 @@
 #include <stdio.h>
 
-// Função para verificar se um número é palíndromo
+// FunÃ§Ã£o para verificar se um nÃºmero Ã© palÃ­ndromo
 int verificaPalindromo(int numero) {
     int original = numero;
     int reverso = 0;
 
-    // Inverte o número
+    // Inverte o nÃºmero
     while (numero > 0) {
         int digito = numero % 10;
         reverso = reverso * 10 + digito;
         numero /= 10;
     }
 
-    // Verifica se o número é igual ao seu reverso
+    // Verifica se o nÃºmero Ã© igual ao seu reverso
     if (original == reverso) {
-        return 1; // É um palíndromo
+        return 1; // Ã‰ um palÃ­ndromo
     } else {
-        return 0; // Não é um palíndromo
+        return 0; // NÃ£o Ã© um palÃ­ndromo
     }
 }
 
@@ -26,9 +26,9 @@ int main() {
     scanf("%d", &num);
 
     if (num <= 0) {
-        printf("0\n"); // Retorna 0 para números negativos ou zero
+        printf("0\n"); // Retorna 0 para nÃºmeros negativos ou zero
     } else {
-        printf("%d\n", verificaPalindromo(num)); // Retorna 1 se for palíndromo, 0 caso contrário
+        printf("%d\n", verificaPalindromo(num)); // Retorna 1 se for palÃ­ndromo, 0 caso contrÃ¡rio
     }
 
     return 0;
