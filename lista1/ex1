@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main() {
+
+float qnt_num, media, soma =0;
+int  num, maior, menor;
+
+
+printf("Digite a quantidade de numeros: \n");
+scanf("%f", &qnt_num);
+
+while(qnt_num<=0){
+    printf("Digite um numero inteiro positivo e diferente de zero: \n");    //quantidade de numeros invalida
+    scanf("%f",&qnt_num);
+}
+
+printf("Digite o numero %d: ", 1);                                          //primeiro numero
+scanf("%d", &num);
+while (num<0){
+    printf("Digite um numero inteiro e positivo: \n");
+    scanf("%d",&num);
+}
+
+soma += num;                                     
+maior = menor = num;
+
+for (int i=1;i<qnt_num;i++){                                        //calculo da soma, maior e menor numero
+    printf("Digite o numero %d: ", i+1);
+    scanf("%d", &num);
+  while (num<0){
+      printf("Digite um numero inteiro e positivo: \n");
+      scanf("%d",&num);}
+  soma= soma+num;
+  if (num<menor){
+      menor=num;
+  }else if (num>maior){
+  maior=num;}
+}
+
+media = soma/qnt_num;                                          // calculo da media
+
+printf("O menor numero entre os %.0f : %d\n", qnt_num, menor);              //print dos resultados na tela
+printf("O maior numero entre os %.0f : %d\n", qnt_num, maior);
+printf("A media aritimetica dos %.0f numeros : %.2f\n", qnt_num, media);
+printf("A soma dos %.0f n�meros �: %.0f\n", qnt_num, soma);
+
+return 0;
+}
