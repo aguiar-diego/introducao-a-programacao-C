@@ -1,4 +1,4 @@
-# Lista 2 – Funções, Lógica e Manipulação de Dígitos
+# Funções, Lógica e Manipulação de Dígitos
 
 > **OBS:** Usem sempre a definição de variáveis inteiras como `short int`, pois assim os valores ficam definidos como sendo de -32767 a +32768.
 
