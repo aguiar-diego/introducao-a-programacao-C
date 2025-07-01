@@ -1,5 +1,5 @@
 /*Exercicio 07_06*/
-/*GRUPO: Arthur Almeida Betti - NUSP 15586631 && Diego Souza Aguiar NUSP 15574221*/
+/*GRUPO: Arthur Betti - NUSP 155***** && Diego Aguiar NUSP 155******/
 
 /*Criar uma lista ligada simples e em cada no deve ter um inteiro e um ponteiro para o proximo no*/
 
