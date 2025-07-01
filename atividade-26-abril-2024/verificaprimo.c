@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-bool verifica_primo(int numero) {//funcao verifica primo verifica se um numero dado È primo ou n„o, ela retorna 1 caso for primo ou 0 caso n„o for
-    if (numero <= 1) {//verifica se um numero È <=1, se sim retorna falso, pois numeros primos sao >1
+bool verifica_primo(int numero) {//funcao verifica primo verifica se um numero dado √© primo ou n√£o, ela retorna 1 caso for primo ou 0 caso n√£o for
+    if (numero <= 1) {//verifica se um numero √© <=1, se sim retorna falso, pois numeros primos sao >1
         return false;
     }
     for (int i = 2; i * i <= numero; ++i) {//enquanto i*i for <= numero, adiciona 1 ao i
@@ -10,7 +10,7 @@ bool verifica_primo(int numero) {//funcao verifica primo verifica se um numero d
             return false;
         }
     }
-    return true;// caso contrario retorna true, o numero È primo!
+    return true;// caso contrario retorna true, o numero √© primo!
 }
 
 int main() {
@@ -19,7 +19,7 @@ int main() {
     scanf("%d", &qtd_numeros);//atribui a quantidade de numeros para a variavel qtd_numeros
 
     if (qtd_numeros <= 0) {
-        printf("Por favor, insira um n˙mero positivo maior que zero.\n");// se a quantidade de numeros for <= 0 pede para o usurario digitar uma quantidade de numeros maior
+        printf("Por favor, insira um n√∫mero positivo maior que zero.\n");// se a quantidade de numeros for <= 0 pede para o usurario digitar uma quantidade de numeros maior
         return 1;
     }
 
@@ -28,7 +28,7 @@ int main() {
         printf("Digite um numero inteiro e positivo: ");
         scanf("%d", &numeros[i]);//atribui os numeros digitados para o array numeros
         if (numeros[i] <= 0) {
-            printf("Numero invalido. Insira um n˙mero positivo.\n");// caso o usuario digite um numero invalido
+            printf("Numero invalido. Insira um n√∫mero positivo.\n");// caso o usuario digite um numero invalido
             return 1;
         }
     }
