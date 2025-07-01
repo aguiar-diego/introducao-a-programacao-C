@@ -40,12 +40,3 @@ O programa deve indicar **quais elementos do vetor 1 também aparecem no vetor 2
 Programa similar ao exercício 3, mas agora **o vetor 1 pode conter repetições**.  
 Nesse caso, **apenas uma ocorrência de cada valor** do vetor 1 deve ser considerada na análise de interseção com o vetor 2.
 
----
-
-## 🔧 Compilação
-
-Todos os códigos são escritos em linguagem C e podem ser compilados da seguinte forma:
-
-```bash
-gcc nome_do_arquivo.c -o nome_do_programa
-./nome_do_programa
