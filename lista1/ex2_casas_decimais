@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+
+int unidade = 0, dezena = 0, centena = 0, milhar = 0, num = 0;
+
+    printf("Digite o seu numero, lembrando que ele deve ser maior que %d e menor que %d:  ",0,10000);
+    scanf("%d", &num);
+
+    while (num<0 || num>9999){
+        printf("Voce digitou um numero negativou ou maior que %d, por favor tente novamente:\n", 9999);
+        scanf("%d", &num);
+    }
+
+    unidade =  num % 10;
+    dezena  = (num/10)%10;
+    centena = (num/100)%10;
+    milhar  =  num/1000;
+
+                printf("Unidade :%d\n", unidade);
+                printf("Dezena :%d\n", dezena);
+                printf("Centena :%d\n", centena);
+                printf("Milhar :%d\n", milhar);
+
+return 0;
+}
