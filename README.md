@@ -16,3 +16,12 @@ Repositório com atividades da disciplina de Introdução à Programação (IP),
 ## Organização
 
 Cada pasta corresponde a uma lista de exercícios ou trabalho prático da disciplina.
+---
+
+## 🔧 Compilação
+
+Todos os códigos são escritos em linguagem C e podem ser compilados da seguinte forma:
+
+```bash
+gcc nome_do_arquivo.c -o nome_do_programa
+./nome_do_programa
