@@ -30,12 +30,4 @@ deve mostrar **quantas vezes uma repetição de dois números iguais ao segundo 
 - Parâmetro 1: `3434`, Parâmetro 2: `4` → retorna `0`
 - Parâmetro 1: `8549`, Parâmetro 2: `4` → retorna `0`
 
----
 
-## 🔧 Compilação
-
-Todos os códigos são escritos em linguagem C e podem ser compilados da seguinte forma:
-
-```bash
-gcc nome_do_arquivo.c -o nome_do_programa
-./nome_do_programa
