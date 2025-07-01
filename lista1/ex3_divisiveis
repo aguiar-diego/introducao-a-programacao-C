@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <stdbool.h>
+
+bool verifica_4(int num){
+  if (num%4==0){
+      return true;
+  }else{
+  return false;
+  }
+}
+
+bool verifica_7(int num){
+  if (num%7==0){
+      return true;
+  }else{
+  return false;
+  }
+}
+
+bool verifica_13(int num){
+  if (num%13==0){
+      return true;
+  }else{
+  return false;
+  }
+}
+
+int main (){
+
+int qnt_num = -1;
+
+
+while (qnt_num<=0){
+    printf ("Digite a quantidade de numeros (positivos): \n");
+    scanf ("%d", &qnt_num);
+    }
+
+int numeros[qnt_num];
+
+    for (int i=0; i<qnt_num; i++){
+        printf ("Digite o %d numero: \n", i+1);
+        scanf ("%d", &numeros[i]);
+       }
+
+int por_4 = 0, por_7 = 0, por_13 = 0, restante=0;
+for (int i = 0; i<qnt_num; i++){
+    if (verifica_4(numeros[i])){
+      por_4++;
+    }else if (verifica_7(numeros[i])){
+      por_7++;
+    }else if (verifica_13(numeros[i])){
+      por_13++;
+    }else{
+    restante++;
+    }
+}
+    printf("Quantidade de numeros divisiveis por %d: %d\n",4, por_4);
+    printf("Quantidade de numeros divisiveis por %d: %d\n",7, por_7);
+    printf("Quantidade de numeros divisiveis por %d: %d\n",13, por_13);
+    printf("Quantidade de numeros restantes: %d\n", restante);
+return 0;
+}
